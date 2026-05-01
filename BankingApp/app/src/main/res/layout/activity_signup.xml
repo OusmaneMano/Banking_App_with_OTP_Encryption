@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Sign Up"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2E3A59"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/tFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:background="@drawable/bg_input"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/tPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:background="@drawable/bg_input"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/tUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/bg_input"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/tPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/bg_input"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/tbtnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#FFF"
+            android:backgroundTint="#2E7D32"
+            android:minHeight="48dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Back to Login -->
+        <Button
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Login"
+            android:textColor="#FFF"
+            android:backgroundTint="#455A64"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/ttvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D32F2F"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>
